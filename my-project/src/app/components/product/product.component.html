@@ -2,4 +2,5 @@
 <h2>{{ product.price | currency :'S/.' }}</h2>
 <p>{{ product.title | reverse }}</p>
 <p>{{ product.title | changeVowels }}</p>
+<p appHighlight>{{ product.description }}</p>
 <button (click)="onAddToCart()">Add cart</button>

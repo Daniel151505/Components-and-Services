@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { ChangeVowelsPipe } from './pipes/change-vowels.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ChangeVowelsPipe } from './pipes/change-vowels.pipe';
     NavComponent,
     ReversePipe,
     TimeAgoPipe,
-    ChangeVowelsPipe
+    ChangeVowelsPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
