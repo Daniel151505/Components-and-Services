@@ -1,15 +1,15 @@
-import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-img',
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss']
 })
-export class ImgComponent implements OnInit {
+export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy {
 
   img: string = '';
 
-  @Input('img')
+  @Input()
   set changeImg(newImg: string) {
     this.img = newImg;
     console.log('changes just img =>', this.img)
