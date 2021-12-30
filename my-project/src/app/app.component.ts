@@ -8,6 +8,7 @@ import { Product } from './models/product.model';
 })
 export class AppComponent {
   imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+  showImg = true;
   products: Product[] = [
     {
       id: '1',
@@ -37,6 +38,10 @@ export class AppComponent {
 
   onLoaded(img: string) {
     console.log('Padre', img)
+  }
+
+  toggleImg() {
+    this.showImg = !this.showImg
   }
 
 }
